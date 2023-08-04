@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" id="ht">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Ls.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="jk">
+    <nav id='htm' class="nava">
+        <a href="#" class="active">Hot Chilli</a>
+        <a href="#">Home</a>
+        <a href="#">about</a>
+        <a href="#">contact</a>
+        <div class="right">
+        <a href="#" onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">login</a>
+        <a href="#" onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">signup</a></div>
+    </nav>
+    <div id='login-form'class='login-page' >
+        <div class="form-box">
+            <div class='button-box'>
+                <div id='btn'></div>
+                <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+            </div>
+            <form id='login' class='input-group-login' method="post" action="login.php">
+                <input type='text'class='input-field'placeholder='Email Id' name="mailid" required >
+        <input type='password'class='input-field'placeholder='Enter Password' name="pass" required>
+        <input type='checkbox'class='check-box'><span>Remember Password</span>
+        <button type='submit'class='submit-btn'>Log in</button>
+     </form>
+     <form id='register' class='input-group-register' method="post" action="dd.php">
+         <input type='text'class='input-field'placeholder='First Name' name="fname" required>
+         <input type='text'class='input-field'placeholder='Last Name ' name="lname" required>
+         <input type='email'class='input-field'placeholder='Email Id' name="mail" required>
+         <input type='password'class='input-field'placeholder='Enter Password' name="passcode" required>
+         <input type='password'class='input-field'placeholder='Confirm Password' name="concode" required>
+         <input type='checkbox'class='check-box'><span>I agree to the terms and                                                   conditions</span>
+                <button type='submit'class='submit-btn'>Register</button>
+         </form>
+        </div>
+    </div>
+    <div class="filter">
+        <i class="fa fa-bars" onclick='myFunction()' id="menu1" style="font-size:20px"></i>
+        <div id="searchbar"><input type="text" class="search" id="fw" value="🔎0-1000" required>
+        <button class="but" onclick="fb()" id="filbut">filter</button></div>
+    </div>
+    <div class="food menu" id="hj">
+        <div class="food-menu1">
+        </div>
+        <div class="imag1" id="bug" value="40"><img src="https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzdGZvb2R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" height="120" width="120">
+        <div class="fo"><h1>Burger</h1> <p>$ 40.00</p></div></div>
+        <div class="imag1" id="cp" value="70"><img src="https://images.unsplash.com/photo-1627378378952-a736d8e12219?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGZhc3Rmb29kfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" height="120" width="120">
+        <div class="fo"><h1>Chicken poppcorn</h1><p>$ 70.00</p></div></div>
+        <div class="imag1" id="piz" value="80"><img src="https://images.unsplash.com/photo-1613564834361-9436948817d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHBpenphfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" height="120" width="120">
+        <div class="fo"><h1>Pizza</h1><p>$ 80.00</p></div></div>
+        <div class="imag1" id="cb" value="90"><img src="https://media.istockphoto.com/id/1430345748/photo/biryani-overhead-view.webp?b=1&s=170667a&w=0&k=20&c=a5wum1ftHZkQjwm_6SWFc1UwL2g1CzvdV_UKJ266Dms=" height="120" width="120">
+        <div class="fo"><h1>Chicken briyani</h1><p>$ 90.00</p></div></div>
+        <div class="imag1" id="ff" value="120"><img src="https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzdGZvb2R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" height="120" width="120">
+        <div class="fo"><h1>Fish fry</h1><p>$ 120.00</p></div></div>
+        <div class="imag1" id="bb" value="150"><img src="https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzdGZvb2R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" height="120" width="120">
+        <div class="fo"><h1>Bambo briyani</h1><p>$ 150.00</p></div></div>
+        <div class="imag1" id="pp" value="50"><img src="https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzdGZvb2R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" height="120" width="120">
+        <div class="fo"><h1>Pepper Chicken</h1><p>$ 50.00</p></div></div>
+    </div>
+
+<script>
+    var x=document.getElementById('login');
+    var y=document.getElementById('register');
+    var z=document.getElementById('btn');
+    function register()
+    {
+        x.style.left='-400px';
+        y.style.left='50px';
+        z.style.left='110px';
+    }
+    function login()
+    {
+        x.style.left='50px';
+        y.style.left='450px';
+        z.style.left='0px';
+    }
+</script>
+<script>
+    var modal = document.getElementById('ht');
+    var modal2 = document.getElementById('login-form');
+    var modal3 = document.getElementById('food menu');
+   window.onclick = function(event) 
+    {   
+       
+        if (event.target == modal || event.target == modal2 || event.target==modal3) 
+        {
+            modal2.style.display = "none";
+        }
+    } 
+</script>
+<script>
+   function myFunction() {
+  var x = document.getElementById('searchbar');
+  if (x.style.visibility === 'hidden') {
+    x.style.visibility = 'visible';
+  } else {
+    x.style.visibility = 'hidden';
+  }
+}
+</script>
+<script>
+    function fb(){
+    var ar=[{id:"bug",value:40},{id:"cp",value:70},{id:'piz',value:80},{id:'cb',value:90},{id:'bb',value:120},{id:'ff',value:150},{id:'pp',value:50}];
+    var b=document.getElementById('fw');
+    for(let k=0;k<ar.length;k++){
+        if(b.value>=ar[k].value){
+        var d=document.getElementById(ar[k].id);
+        d.style.visibility='visible';
+    }
+    else{
+        var d=document.getElementById(ar[k].id);
+        d.style.visibility='hidden';
+    }
+    }
+    }
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const fwInput = document.getElementById("fw");
+      const hj = document.getElementById("hj");
+      const productList = productMenu.getElementsByTagName("li");
+
+      productFilterInput.addEventListener("input", function() {
+        const filterValue = productFilterInput.value.toLowerCase();
+
+        for (let i = 0; i < productList.length; i++) {
+          const productName = productList[i].textContent.toLowerCase();
+          if (productName.includes(filterValue)) {
+            productList[i].style.display = "block";
+          } else {
+            productList[i].style.display = "none";
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

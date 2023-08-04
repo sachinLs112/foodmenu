@@ -1,0 +1,198 @@
+*{
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(64, 65, 69);
+}
+nav {
+   position: relative;
+   overflow: hidden;
+   background: black;
+}
+nav a{
+    display: block;
+    float: left;
+    padding: 15px 20px;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    
+}
+.active{
+    padding: 15px 50px;
+    font-size: 25px;
+}
+.right{
+    float: right;
+}
+nav a.active{
+    background-color: #04AA6D;
+    color: white;
+}
+nav a:hover{
+    background-color: #67d9af; 
+    color: white;
+}
+.login-page{
+    height: 440px;
+    width: 340px;
+    background-color: transparent;
+    position: relative;
+    margin: 20px 20px;
+    float: right;
+    padding: 20px 20px;
+    overflow: hidden;
+}
+
+.check-box
+{
+	margin: 30px 10px 34px 0;
+}
+span
+{
+	color:#777;
+	font-size:12px;
+	bottom:68px;
+	position:absolute;
+}
+#login
+{
+	left:50px;
+}
+#login input
+{
+	color:white;
+	font-size:15;
+}
+#register
+{
+	left:450px;
+}
+#register input
+{
+	color:white;
+	font-size: 15;
+}
+.toggle-btn
+{
+	padding:10px 30px;
+	cursor:pointer;
+	background: transparent;
+	border:0;
+	outline: none;
+	position: relative;
+}
+.input-group-login
+{
+	top: 150px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-group-register
+{
+    top: 120px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-field
+{
+	width: 100%;
+	padding:10px 0;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid #999;
+	outline:none;
+	background: transparent;
+}
+.submit-btn
+{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #F3C693;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+.button-box
+{
+	width:220px;
+	margin:35px auto;
+	position:relative;
+	box-shadow: 0 0 20px 9px #ff61241f;
+	border-radius: 30px;
+} 
+ #btn
+{
+	top: 0;
+	left:0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #F3C693;
+	border-radius: 30px;
+	transition: .5s;
+}
+.imag1{
+	width: 700px;
+	height: 120px;
+	margin-top:20px ;
+	margin-left: 20px;
+	position: relative;
+	padding: 10px 10px;
+	overflow: hidden;
+	background-color: rgb(4, 5, 5);
+	border-radius: 30px;
+	display: flex;
+	color: rgb(223, 220, 220);
+}
+.fo{
+	padding: 20px 30px;
+}
+img{
+	border-radius: 30px;
+}
+.filter{
+	width:100%;
+	height: 22px;
+	background-color: #818080	;
+}
+.search{
+	padding: 8px 10px;
+	margin-left:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid #7b7878;
+	outline:none;
+	background: transparent;
+}
+.filter i{
+	padding: 2px 2px;
+}
+.food-menu1{
+ padding: 10px 10px;
+}
+#filbut
+{  
+	padding: 4px 5px;
+	position: absolute;
+	background: #F3C693;
+	border-radius: 10px;
+}
+/* .search{
+	width: 100%;
+	
+	border-bottom: 1px solid #b82b2b;
+	
+	
+} */
